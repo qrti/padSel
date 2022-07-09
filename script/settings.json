@@ -1,0 +1,26 @@
+{
+    "multiCommand.commands": [
+        {
+            "command": "multiCommand.padSel",
+            "interval": 250,                            // higher for slow machines or command-runner.terminal.autoFocus is true
+            "sequence": [
+                "editor.action.clipboardCopyAction",
+                {
+                    "command": "command-runner.run",
+                    "args": { 
+                        "command": "padSel" 
+                    }
+                },
+                "workbench.action.focusActiveEditorGroup",
+                "editor.action.clipboardPasteAction"
+            ]
+        }
+    ],
+
+    "command-runner.terminal.name": "runCommand",
+    "command-runner.terminal.autoClear": true,
+    "command-runner.terminal.autoFocus": false,         // if true, interval in multiCommand may be higher
+    "command-runner.commands": {
+        "padSel": "C:\\..\\python.exe C:\\..\\padSel.py ${fileExtname}"
+    }
+}

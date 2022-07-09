@@ -1,0 +1,7 @@
+[
+    {
+        "key": "ctrl+alt+p",
+        "command": "multiCommand.padSel",
+        "when": "editorTextFocus"        
+    }
+]
