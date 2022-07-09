@@ -24,7 +24,7 @@
     "multiCommand.commands": [
         {
             "command": "multiCommand.padSel",
-            "interval": 250,                            // higher for slow machines
+            "interval": 250,                                    // higher for slow machines
             "sequence": [
                 "editor.action.clipboardCopyAction",
                 {
@@ -41,9 +41,9 @@
 
     "command-runner.terminal.name": "runCommand",
     "command-runner.terminal.autoClear": true,
-    "command-runner.terminal.autoFocus": false,         // if true, interval in multiCommand may be higher
+    "command-runner.terminal.autoFocus": false,                 // if true, interval in multiCommand may be higher
     "command-runner.commands": {
-        "padSel": "C:\\..\\python.exe C:\\..\\padSel.py ${fileExtname}"
+        "padSel": "..\\python.exe ..\\padSel.py ${fileExtname}" // adapt your paths to python.exe and padSel.py
     }
 }
 ```
@@ -59,9 +59,11 @@
 ]
 ```
 
-### **needed extensions**
+### **prequisites**
 https://marketplace.visualstudio.com/items?itemName=ryuta46.multi-command  
-https://marketplace.visualstudio.com/items?itemName=edonet.vscode-command-runner
+https://marketplace.visualstudio.com/items?itemName=edonet.vscode-command-runner  
+https://www.python.org/
+
 
 <br>
 
