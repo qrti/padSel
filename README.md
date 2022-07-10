@@ -1,16 +1,19 @@
 # **padSel**
-### **Column Homogenous Comment Positions for vsCode**
+### **Column Helper for vsCode**
 
 <br>
 
-**Because of the lack of a real column edit function in vsCode there is some typework to be saved with this script**
+**Because vsCodes lack of a real column edit function some typework is necessary to pretty up comments**  
+This easy to adapt Python script may save some typework
 
-- select some lines, be careful to select complete lines
-- the line with the most right comment is used as position template  
+- select some code lines, be careful to select complete lines
+- the line in the selction with the right most comment is used as position template  
   if no existing comments are found a default position is used  
   already commented or longer lines are ignored
 - press your binded key or run multiCommand.padSel (with command palette)
 - the selection will be processed and replaced
+
+See script for adding programming languages
 
 <br>
 
@@ -67,7 +70,7 @@ https://www.python.org/
 
 <br>
 
-#### V0.5 220709
+#### V0.5 220710
 ---
 
 #### contact
