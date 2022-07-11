@@ -66,7 +66,8 @@ This easy to adapt Python script may save some time
 }
 ```
 
-### **optional keybindings.json**
+### **keybindings.json**
+optional
 ```
 [
     {
