@@ -9,7 +9,7 @@
 # - Python has to be installed on your system
 # 
 # - select some code lines, be careful to select complete lines
-# - the line in the selction with the right most comment is used as position template  
+# - the line in the selection with the right most comment is used as position template  
 #   if no existing comments are found a default position is used  
 #   already commented or longer lines are ignored
 # - press your binded key or run multiCommand.padSel (with command palette)
@@ -23,7 +23,7 @@ import sys
 import pyperclip as clip
 from operator import itemgetter
 
-# extension: comment string dictonary
+# extension: comment string dictionary
 extD = { '.c': '//', '.cpp': '//', '.h': '//', '.py': '#', '.asm': ';' }
 
 copDef = 64                                                     # comment position default
