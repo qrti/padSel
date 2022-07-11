@@ -77,7 +77,7 @@ This easy to adapt Python script may save some time
 ]
 ```
 
-### **prequisites**
+### **prerequisites**
 https://marketplace.visualstudio.com/items?itemName=ryuta46.multi-command  
 https://marketplace.visualstudio.com/items?itemName=edonet.vscode-command-runner  
 https://www.python.org/
