@@ -3,17 +3,32 @@
 
 <br>
 
-**Because vsCodes lack of a real column edit function some typework is necessary to pretty up comments**  
-This easy to adapt Python script may save some typework
+**Because vsCodes lack of a real column edit function some typework is needed to pretty up comments**  
+This easy to adapt Python script may save some time
+
+- install multi-command and command-runner extensions in vsCode
+- add extension settings to settings.json and optionally to keybindings.json  
+  adapt paths for your system
+- Python has to be installed on your system
+
+<br>
 
 - select some code lines, be careful to select complete lines
-- the line in the selction with the right most comment is used as position template  
+- the line in the selection with the right most comment is used as position template  
   if no existing comments are found a default position is used  
   already commented or longer lines are ignored
 - press your binded key or run multiCommand.padSel (with command palette)
 - the selection will be processed and replaced
 
-See script for adding programming languages
+<br>
+
+- see script for adding programming languages
+- for debugging and error messages change in settings.json  
+  `"command-runner.terminal.autoFocus": true`
+- if terminal.autoFocus is true or on slow machines try  
+  `"interval": 500`
+- adapt paths to python interpreter and script for your system  
+  `"padSel": "..\\python.exe ..\\padSel.py ${fileExtname}"`
 
 <br>
 
@@ -22,7 +37,7 @@ See script for adding programming languages
 <br>
 
 ### **settings.json**
-``` 
+```
 {
     "multiCommand.commands": [
         {
@@ -67,10 +82,9 @@ https://marketplace.visualstudio.com/items?itemName=ryuta46.multi-command
 https://marketplace.visualstudio.com/items?itemName=edonet.vscode-command-runner  
 https://www.python.org/
 
-
 <br>
 
-#### V0.5 220710
+#### V0.5 220711
 ---
 
 #### contact

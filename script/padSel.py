@@ -1,8 +1,15 @@
-# pad selection V0.5 qrt@qland.de 220709
-# Column Homogenous Comment Positions for vsCode
+# pad selection V0.5 qrt@qland.de 220711
+# Column Helper for vsCode
+#
+# Because vsCodes lack of a real column edit function some typework is needed to pretty up comments
+#
+# - install multi-command and command-runner extensions in vsCode
+# - add extension settings to settings.json and optionally to keybindings.json  
+#   adapt paths for your system
+# - Python has to be installed on your system
 # 
-# - select some lines, be careful to select complete lines
-# - the line with the most right comment is used as position template  
+# - select some code lines, be careful to select complete lines
+# - the line in the selction with the right most comment is used as position template  
 #   if no existing comments are found a default position is used  
 #   already commented or longer lines are ignored
 # - press your binded key or run multiCommand.padSel (with command palette)
@@ -28,7 +35,7 @@ if not cms:                                                     # extension not 
     print('error: extension not found')                         #
     exit(0)                                                     #
 
-spl = clip.paste().splitlines()                                 # get clipboard and split lines
+spl = clip.paste().splitlines()                                 # paste from clipboard and split lines
 lines = [ [line.rstrip(), line.rfind(cms)] for line in spl ]    # [ [line, comment position] ]
 
 cop = max(lines, key=itemgetter(1))[1]                          # comment position
@@ -41,4 +48,4 @@ for line in lines:                                              # pad lines
         line[0] = ('{:<' + str(cop) + '}{}').format(line[0], cms)
 
 nLines = '\n'.join([ line[0] for line in lines ]) + '\n'        # join lines
-clip.copy(nLines)                                               # past to clipboard
+clip.copy(nLines)                                               # copy to clipboard
