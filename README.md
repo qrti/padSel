@@ -7,8 +7,8 @@
 This easy to adapt Python script may save some time
 
 - install multi-command and command-runner extensions in vsCode
-- add extension settings to [settings.json](#settings.json) and adapt paths for your system  
-  optionally bind a key in [keybindings.json](#keybindings.json)
+- add extension settings to [settings.json](#settingsjson) and adapt paths for your system  
+  optionally bind a key in [keybindings.json](#keybindingsjson)
 - Python has to be installed on your system
 
 <br>
